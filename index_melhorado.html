@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A2 Prime Solution, SU, LDA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004b8d;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    nav {
+      background-color: #022c43;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .carousel {
+      width: 100%;
+      max-width: 1000px;
+      overflow: hidden;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+      0% {margin-left: 0;}
+      33% {margin-left: -100%;}
+      66% {margin-left: -200%;}
+      100% {margin-left: 0;}
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .service {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .service i {
+      font-size: 2rem;
+      color: #004b8d;
+      margin-bottom: 0.5rem;
+    }
+    .btn-orcamento {
+      display: inline-block;
+      background: #f68b1e;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #004b8d;
+      color: white;
+      padding: 10px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #022c43;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://armandofrancisco.github.io/a2primesolution-site/logo.png" alt="Logotipo A2">
+    <h1>A2 Prime Solution, SU, LDA</h1>
+    <p>Soluções Inovadoras para um Moçambique Sustentável</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#orcamento">Orçamento</a>
+    <a href="#contacto">Contactos</a>
+  </nav>
+
+  <div class="carousel">
+    <div class="slides">
+      <img src="https://source.unsplash.com/1600x600/?technology,africa" alt="Slide 1">
+      <img src="https://source.unsplash.com/1600x600/?solar,energy" alt="Slide 2">
+      <img src="https://source.unsplash.com/1600x600/?logistics,business" alt="Slide 3">
+    </div>
+  </div>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A2 Prime Solution é uma empresa moçambicana que oferece soluções completas e integradas em TIC, formação, logística, energia renovável, gestão de facilities e fornecimento de bens.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="service"><i class="fas fa-network-wired"></i><p>TIC & Redes</p></div>
+      <div class="service"><i class="fas fa-chalkboard-teacher"></i><p>Formação Profissional</p></div>
+      <div class="service"><i class="fas fa-solar-panel"></i><p>Energia Solar</p></div>
+      <div class="service"><i class="fas fa-truck"></i><p>Logística e Transporte</p></div>
+      <div class="service"><i class="fas fa-broom"></i><p>Facilities</p></div>
+      <div class="service"><i class="fas fa-tools"></i><p>Reparações e Manutenção</p></div>
+    </div>
+  </section>
+
+  <section id="orcamento">
+    <h2>Pedir Orçamento</h2>
+    <a class="btn-orcamento" href="https://wa.me/258844737871" target="_blank">💬 Pedir via WhatsApp</a>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacte-nos</h2>
+    <p>Rua José Carlos Nº 177, Maputo<br>Tel: +258 844737871 / 864737871</p>
+    <form action="https://formsubmit.co/a2primesolutions@zohomail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A2 Prime Solution, SU, LDA</p>
+    <div class="social-icons">
+      <a href="https://wa.me/258844737871" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
